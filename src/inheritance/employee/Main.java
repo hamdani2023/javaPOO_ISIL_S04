@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package inheritance_employee;
+package inheritance.employee;
 
 /**
  *
@@ -32,10 +32,9 @@ public class Main {
 
         System.out.println("call Method - getAge() - from class  Person --> " + emp.getAge());
 
-        
         System.out.println(" \n ********** Test Access to variable ********** ");
-       // System.out.println("person.name " + pers.name);
+        // System.out.println("person.name " + pers.name);
         System.out.println();
-        
+
     }
 }

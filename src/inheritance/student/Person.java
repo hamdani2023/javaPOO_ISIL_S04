@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package inheritance_Student;
+package inheritance.student;
 
 /**
  *
@@ -10,8 +10,8 @@ package inheritance_Student;
  */
 // Person class
 class Person {
-    protected String name;
-    protected int age;
+    private String name;
+    private int age;
     
     // Constructor
     public Person(String name, int age) {
@@ -21,24 +21,44 @@ class Person {
     
     // Method to display information
     public void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+        System.out.println("Name: " + getName());
+        System.out.println("Age: " + getAge());
     }
     
     // Method to update information
     public void update(String name, int age) {
-        this.name = name;
-        this.age = age;
+        this.setName(name);
+        this.setAge(age);
         System.out.println("Information updated successfully.");
     }
-    
-    // Getter for name
+
+    /**
+     * @return the name
+     */
     public String getName() {
         return name;
     }
-    
-    // Getter for age
+
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * @return the age
+     */
     public int getAge() {
         return age;
     }
+
+    /**
+     * @param age the age to set
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+     
 }
