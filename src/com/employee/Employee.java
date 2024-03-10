@@ -3,19 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package inheritance.employee;
- import inheritance.student.*;
+package com.employee;
 
-// Subclass or child class
+import com.person.Person;
 
-class Employee extends Person {
+public class Employee extends Person {
 
   String company;
 
   String jobTitle;
 
   double salary;
-
 
   public Employee(String name, String address, int age, String company, String jobTitle, double salary) {
 
@@ -29,25 +27,34 @@ class Employee extends Person {
 
   }
 
-
+  
   public String getCompany() {
-
     return company;
-
   }
 
 
   public String getJobTitle() {
-
     return jobTitle;
-
   }
 
 
   public double getSalary() {
-
     return salary;
+  }
 
+
+  public void setCompany(String company) {
+    this.company = company;
+  }
+
+
+  public void setJobTitle(String jobTitle) {
+    this.jobTitle = jobTitle;
+  }
+
+
+  public void setSalary(double salary) {
+    this.salary = salary;
   }
 
 
@@ -55,7 +62,6 @@ class Employee extends Person {
   public void displayInfo() {
 
     super.displayInfo();
-    
 
     System.out.println("Company: " + company);
 
@@ -66,4 +72,3 @@ class Employee extends Person {
   }
 
 }
- 
